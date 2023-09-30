@@ -1,7 +1,5 @@
 package uniandes.edu.modelo;
 
-import java.sql.Date;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -9,36 +7,36 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "reservaHabitacion")
+@Table(name = "reservasHabitaciones")
 public class ReservaHabitacion {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private Integer numPersonas;
     private String tipoPlan;
-    private Date diaEntrada;
-    private Date mesEntrada;
-    private Date anoEntrada;
+    private Integer diaEntrada;
+    private Integer mesEntrada;
+    private Integer anioEntrada;
     private Integer horaEntrada;
-    private Date diaSalida;
-    private Date mesSalida;
-    private Date anoSalida;
+    private Integer diaSalida;
+    private Integer mesSalida;
+    private Integer anioSalida;
     private Integer horaSalida;
     
 
     public ReservaHabitacion() {;}
 
-    public ReservaHabitacion(Integer numPersonas, String tipoPlan, Date diaEntrada, Date mesEntrada,
-            Date anoEntrada, Integer horaEntrada, Date diaSalida, Date mesSalida, Date anoSalida, Integer horaSalida) {
+    public ReservaHabitacion(Integer numPersonas, String tipoPlan, Integer diaEntrada, Integer mesEntrada,
+            Integer anioEntrada, Integer horaEntrada, Integer diaSalida, Integer mesSalida, Integer anioSalida, Integer horaSalida) {
         this.numPersonas = numPersonas;
         this.tipoPlan = tipoPlan;
         this.diaEntrada = diaEntrada;
         this.mesEntrada = mesEntrada;
-        this.anoEntrada = anoEntrada;
+        this.anioEntrada = anioEntrada;
         this.horaEntrada = horaEntrada;
         this.diaSalida = diaSalida;
         this.mesSalida = mesSalida;
-        this.anoSalida = anoSalida;
+        this.anioSalida = anioSalida;
         this.horaSalida = horaSalida;
     }
 
@@ -66,28 +64,28 @@ public class ReservaHabitacion {
         this.tipoPlan = tipoPlan;
     }
 
-    public Date getDiaEntrada() {
+    public Integer getDiaEntrada() {
         return diaEntrada;
     }
 
-    public void setDiaEntrada(Date diaEntrada) {
+    public void setDiaEntrada(Integer diaEntrada) {
         this.diaEntrada = diaEntrada;
     }
 
-    public Date getMesEntrada() {
+    public Integer getMesEntrada() {
         return mesEntrada;
     }
 
-    public void setMesEntrada(Date mesEntrada) {
+    public void setMesEntrada(Integer mesEntrada) {
         this.mesEntrada = mesEntrada;
     }
 
-    public Date getAnoEntrada() {
-        return anoEntrada;
+    public Integer getAnioEntrada() {
+        return anioEntrada;
     }
 
-    public void setAnoEntrada(Date anoEntrada) {
-        this.anoEntrada = anoEntrada;
+    public void setAnioEntrada(Integer anioEntrada) {
+        this.anioEntrada = anioEntrada;
     }
 
     public Integer getHoraEntrada() {
@@ -98,28 +96,28 @@ public class ReservaHabitacion {
         this.horaEntrada = horaEntrada;
     }
 
-    public Date getDiaSalida() {
+    public Integer getDiaSalida() {
         return diaSalida;
     }
 
-    public void setDiaSalida(Date diaSalida) {
+    public void setDiaSalida(Integer diaSalida) {
         this.diaSalida = diaSalida;
     }
 
-    public Date getMesSalida() {
+    public Integer getMesSalida() {
         return mesSalida;
     }
 
-    public void setMesSalida(Date mesSalida) {
+    public void setMesSalida(Integer mesSalida) {
         this.mesSalida = mesSalida;
     }
 
-    public Date getAnoSalida() {
-        return anoSalida;
+    public Integer getAnioSalida() {
+        return anioSalida;
     }
 
-    public void setAnoSalida(Date anoSalida) {
-        this.anoSalida = anoSalida;
+    public void setAnioSalida(Integer anioSalida) {
+        this.anioSalida = anioSalida;
     }
 
     public Integer getHoraSalida() {

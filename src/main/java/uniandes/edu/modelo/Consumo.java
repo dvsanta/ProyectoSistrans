@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.GenerationType;
 @Entity
-@Table(name = "consumo")
+@Table(name = "consumos")
 public class Consumo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -17,14 +17,14 @@ public class Consumo {
     private double precioTotal;
     private Date dia;
     private Date mes;
-    private Date ano;
+    private Date anio;
     private Integer hora;
-    public Consumo(String descripcion, double precioTotal, Date dia, Date mes, Date ano, Integer hora) {
+    public Consumo(String descripcion, double precioTotal, Date dia, Date mes, Date anio, Integer hora) {
         this.descripcion = descripcion;
         this.precioTotal = precioTotal;
         this.dia = dia;
         this.mes = mes;
-        this.ano = ano;
+        this.anio = anio;
         this.hora = hora;
     }
 
@@ -61,11 +61,11 @@ public class Consumo {
     public void setMes(Date mes) {
         this.mes = mes;
     }
-    public Date getAno() {
-        return ano;
+    public Date getAnio() {
+        return anio;
     }
-    public void setAno(Date ano) {
-        this.ano = ano;
+    public void setAnio(Date anio) {
+        this.anio = anio;
     }
     public Integer getHora() {
         return hora;
