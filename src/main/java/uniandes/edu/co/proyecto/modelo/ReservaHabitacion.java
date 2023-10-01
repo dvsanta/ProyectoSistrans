@@ -22,7 +22,7 @@ public class ReservaHabitacion {
 
     @ManyToOne
     @JoinColumn(name = "id_habitacion", referencedColumnName = "id")
-    private Usuario id_habitacion;
+    private Habitacion id_habitacion;
 
     public ReservaHabitacion() {;}
 
@@ -105,8 +105,8 @@ public class ReservaHabitacion {
 
     public void setIdUsuario(Usuario id_usuario) {this.id_usuario = id_usuario;}
 
-    public Usuario getIdHabitacion() {return id_habitacion;}
+    public Habitacion getIdHabitacion() {return id_habitacion;}
 
-    public void setIdHabitacion(Usuario id_habitacion) {this.id_habitacion = id_habitacion;}
+    public void setIdHabitacion(Habitacion id_habitacion) {this.id_habitacion = id_habitacion;}
     
 }
