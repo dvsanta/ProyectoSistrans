@@ -1,4 +1,4 @@
-package uniandes.edu.modelo;
+package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,22 +7,22 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="planesConsumos")
+@Table(name="planes_consumo")
 public class PlanConsumo {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String tipo;
-    private Integer descuentoGeneral;
-    private Boolean bebidasIlimitadas;
-    private Boolean internetIlimitado;
+    private Integer descuento_general;
+    private Boolean bebidas_ilimitadas;
+    private Boolean internet_ilimitado;
 
     public PlanConsumo(String tipo, Integer descuentoGeneral, Boolean bebidasIlimitadas, Boolean internetIlimitado) {
         this.tipo = tipo;
-        this.descuentoGeneral = descuentoGeneral;
-        this.bebidasIlimitadas = bebidasIlimitadas;
-        this.internetIlimitado = internetIlimitado;
+        this.descuento_general = descuentoGeneral;
+        this.bebidas_ilimitadas = bebidasIlimitadas;
+        this.internet_ilimitado = internetIlimitado;
     }
 
     public PlanConsumo()
@@ -45,27 +45,27 @@ public class PlanConsumo {
     }
 
     public Integer getDescuentoGeneral() {
-        return descuentoGeneral;
+        return descuento_general;
     }
 
     public void setDescuentoGeneral(Integer descuentoGeneral) {
-        this.descuentoGeneral = descuentoGeneral;
+        this.descuento_general = descuentoGeneral;
     }
 
     public Boolean getBebidasIlimitadas() {
-        return bebidasIlimitadas;
+        return bebidas_ilimitadas;
     }
 
     public void setBebidasIlimitadas(Boolean bebidasIlimitadas) {
-        this.bebidasIlimitadas = bebidasIlimitadas;
+        this.bebidas_ilimitadas = bebidasIlimitadas;
     }
 
     public Boolean getInternetIlimitado() {
-        return internetIlimitado;
+        return internet_ilimitado;
     }
 
     public void setInternetIlimitado(Boolean internetIlimitado) {
-        this.internetIlimitado = internetIlimitado;
+        this.internet_ilimitado = internetIlimitado;
     }
 
     

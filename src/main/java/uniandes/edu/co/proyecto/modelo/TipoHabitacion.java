@@ -1,4 +1,4 @@
-package uniandes.edu.modelo;
+package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,18 +7,18 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "servicios")
-public class Servicios {
+@Table(name="tipos_habitaciones")
+public class TipoHabitacion {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private Integer precioUnitario;
+    private String nombre;
 
-    public Servicios(Integer precioUnitario) {
-        this.precioUnitario = precioUnitario;
+    public TipoHabitacion(String nombre) {
+        this.nombre = nombre;
     }
 
-    public Servicios()
+    public TipoHabitacion()
     {;}
 
     public Integer getId() {
@@ -29,11 +29,12 @@ public class Servicios {
         this.id = id;
     }
 
-    public Integer getPrecioUnitario() {
-        return precioUnitario;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setPrecioUnitario(Integer precioUnitario) {
-        this.precioUnitario = precioUnitario;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
+
 }

@@ -1,4 +1,4 @@
-package uniandes.edu.modelo;
+package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,27 +7,27 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "informacionRegistros")
+@Table(name = "informacion_registros")
 public class InformacioRegistro {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
     private Integer id;
-    private Integer diaEntrada;
-    private Integer mesEntrada;
-    private Integer anioEntrada;
-    private Integer diaSalida;
-    private Integer mesSalida;
-    private Integer anioSalida;
+    private Integer dia_entrada;
+    private Integer mes_entrada;
+    private Integer anio_entrada;
+    private Integer dia_salida;
+    private Integer mes_salida;
+    private Integer anio_salida;
 
     public InformacioRegistro() {;}
     public InformacioRegistro(Integer diaEntrada, Integer mesEntrada, Integer anioEntrada, Integer diaSalida, Integer mesSalida, Integer anioSalida) {
-        this.diaEntrada = diaEntrada;
-        this.mesEntrada = mesEntrada;
-        this.anioEntrada = anioEntrada;
-        this.diaSalida = diaSalida;
-        this.mesSalida = mesSalida;
-        this.anioSalida = anioSalida;
+        this.dia_entrada = diaEntrada;
+        this.mes_entrada = mesEntrada;
+        this.anio_entrada = anioEntrada;
+        this.dia_salida = diaSalida;
+        this.mes_salida = mesSalida;
+        this.anio_salida = anioSalida;
     }
     public Integer getId() {
         return id;
@@ -36,39 +36,39 @@ public class InformacioRegistro {
         this.id = id;
     }
     public Integer getDiaEntrada() {
-        return diaEntrada;
+        return dia_entrada;
     }
     public void setDiaEntrada(Integer diaEntrada) {
-        this.diaEntrada = diaEntrada;
+        this.dia_entrada = diaEntrada;
     }
     public Integer getMesEntrada() {
-        return mesEntrada;
+        return mes_entrada;
     }
     public void setMesEntrada(Integer mesEntrada) {
-        this.mesEntrada = mesEntrada;
+        this.mes_entrada = mesEntrada;
     }
     public Integer getAnioEntrada() {
-        return anioEntrada;
+        return anio_entrada;
     }
     public void setAnioEntrada(Integer anioEntrada) {
-        this.anioEntrada = anioEntrada;
+        this.anio_entrada = anioEntrada;
     }
     public Integer getDiaSalida() {
-        return diaSalida;
+        return dia_salida;
     }
     public void setDiaSalida(Integer diaSalida) {
-        this.diaSalida = diaSalida;
+        this.dia_salida = diaSalida;
     }
     public Integer getMesSalida() {
-        return mesSalida;
+        return mes_salida;
     }
     public void setMesSalida(Integer mesSalida) {
-        this.mesSalida = mesSalida;
+        this.mes_salida = mesSalida;
     }
     public Integer getAnioSalida() {
-        return anioSalida;
+        return anio_salida;
     }
     public void setAnioSalida(Integer anioSalida) {
-        this.anioSalida = anioSalida;
+        this.anio_salida = anioSalida;
     }
 }

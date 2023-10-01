@@ -1,13 +1,9 @@
-package uniandes.edu.modelo;
+package uniandes.edu.co.proyecto.modelo;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
-    @Entity
-    @Table(name="usuario")
+@Entity
+@Table(name="usuarios")
 public class Usuario {
     
     @Id
@@ -15,12 +11,14 @@ public class Usuario {
     private Integer id;
     private String nombre;
     private String correo_electronico;
-    private TipoUsuario tipoUsuario;
+    @ManyToOne
+    @JoinColumn(name = "tipo", referencedColumnName = "id")
+    private TipoUsuario tipo;
 
     public Usuario(String nombre,String correo_electronico,TipoUsuario tipoUsuario) {
         this.nombre = nombre;
         this.correo_electronico = correo_electronico;
-        this.tipoUsuario = tipoUsuario;
+        this.tipo = tipoUsuario;
     }
 
     public Usuario()
@@ -50,11 +48,11 @@ public class Usuario {
         this.correo_electronico = correo_electronico;
     }
     public TipoUsuario getTipoUsuario() {
-        return tipoUsuario;
+        return tipo;
     }
 
     public void setTipoUsuario(TipoUsuario tipoUsuario) {
-        this.tipoUsuario = tipoUsuario;
+        this.tipo = tipoUsuario;
     }
 
 

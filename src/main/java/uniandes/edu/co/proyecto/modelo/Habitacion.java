@@ -1,4 +1,4 @@
-package uniandes.edu.modelo;
+package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Table;
 
@@ -15,20 +15,20 @@ public class Habitacion {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
     private Integer capacidad;
-    private Double precioHabitacion;
-    private Double precioMinibar;
-    private Double consumoTienda;
-    private Boolean estaOcupada;
+    private Double precio_habitacion;
+    private Double precio_minibar;
+    private Double consumos_tienda;
+    private Boolean esta_ocupada;
 
     public Habitacion(){;}
 
     public Habitacion(Integer capacidad, Double precioHabitacion, Double precioMinibar,
             Double consumoTienda, Boolean estaOcupada) {
         this.capacidad = capacidad;
-        this.precioHabitacion = precioHabitacion;
-        this.precioMinibar = precioMinibar;
-        this.consumoTienda = consumoTienda;
-        this.estaOcupada = estaOcupada;
+        this.precio_habitacion = precioHabitacion;
+        this.precio_minibar = precioMinibar;
+        this.consumos_tienda = consumoTienda;
+        this.esta_ocupada = estaOcupada;
     }
     public Integer getId() {
         return id;
@@ -43,28 +43,28 @@ public class Habitacion {
         this.capacidad = capacidad;
     }
     public Double getPrecioHabitacion() {
-        return precioHabitacion;
+        return precio_habitacion;
     }
     public void setPrecioHabitacion(Double precioHabitacion) {
-        this.precioHabitacion = precioHabitacion;
+        this.precio_habitacion = precioHabitacion;
     }
     public Double getPrecioMinibar() {
-        return precioMinibar;
+        return precio_minibar;
     }
     public void setPrecioMinibar(Double precioMinibar) {
-        this.precioMinibar = precioMinibar;
+        this.precio_minibar = precioMinibar;
     }
     public Double getConsumoTienda() {
-        return consumoTienda;
+        return consumos_tienda;
     }
     public void setConsumoTienda(Double consumoTienda) {
-        this.consumoTienda = consumoTienda;
+        this.consumos_tienda = consumoTienda;
     }
     public Boolean getEstaOcupada() {
-        return estaOcupada;
+        return esta_ocupada;
     }
     public void setEstaOcupada(Boolean estaOcupada) {
-        this.estaOcupada = estaOcupada;
+        this.esta_ocupada = estaOcupada;
     }
 
     

@@ -1,23 +1,23 @@
-package uniandes.edu.modelo;
-
+package uniandes.edu.co.proyecto.modelo;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "bares")
-public class Bar {
-    @id
+@Table(name="tipos_usuarios")
+public class TipoUsuario {
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private TipoBar tipoBar;
+    private String nombre;
 
-    public Bar(TipoBar tipoBar){
-        this.tipoBar = tipoBar;
+    public TipoUsuario(String nombre) {
+        this.nombre = nombre;
     }
 
-    public Bar()
+    public TipoUsuario()
     {;}
 
     public Integer getId() {
@@ -28,13 +28,12 @@ public class Bar {
         this.id = id;
     }
 
-    public TipoBar getTipoBar() {
-        return tipoBar;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setTipoBar(TipoBar tipoBar) {
-        this.tipoBar = tipoBar;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    
 }

@@ -1,4 +1,4 @@
-package uniandes.edu.modelo;
+package uniandes.edu.co.proyecto.modelo;
 
 public enum TipoEspacio {
     SALON_REUNIONES,

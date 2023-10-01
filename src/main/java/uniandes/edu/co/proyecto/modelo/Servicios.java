@@ -1,4 +1,5 @@
-package uniandes.edu.modelo;
+package uniandes.edu.co.proyecto.modelo;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -6,18 +7,18 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="tiposUsuarios")
-public class TipoUsuario {
+@Table(name = "servicios")
+public class Servicios {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private String nombre;
+    private Integer precio_unitario;
 
-    public TipoUsuario(String nombre) {
-        this.nombre = nombre;
+    public Servicios(Integer precioUnitario) {
+        this.precio_unitario = precioUnitario;
     }
 
-    public TipoUsuario()
+    public Servicios()
     {;}
 
     public Integer getId() {
@@ -28,12 +29,11 @@ public class TipoUsuario {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public Integer getPrecioUnitario() {
+        return precio_unitario;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setPrecioUnitario(Integer precioUnitario) {
+        this.precio_unitario = precioUnitario;
     }
-
 }

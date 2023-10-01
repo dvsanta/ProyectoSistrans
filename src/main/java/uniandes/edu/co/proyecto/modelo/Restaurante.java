@@ -1,4 +1,4 @@
-package uniandes.edu.modelo;
+package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,10 +12,10 @@ public class Restaurante {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private TipoRestaurante tipoRestaurante;
+    private TipoRestaurante tipo;
 
     public Restaurante(TipoRestaurante tipoRestaurante) {
-        this.tipoRestaurante = tipoRestaurante;
+        this.tipo = tipoRestaurante;
     }
 
     public Restaurante()
@@ -30,11 +30,11 @@ public class Restaurante {
     }
 
     public TipoRestaurante getTipoRestaurante() {
-        return tipoRestaurante;
+        return tipo;
     }
 
     public void setTipoRestaurante(TipoRestaurante tipoRestaurante) {
-        this.tipoRestaurante = tipoRestaurante;
+        this.tipo = tipoRestaurante;
     }
 
     

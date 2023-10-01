@@ -1,4 +1,4 @@
-package uniandes.edu.modelo;
+package uniandes.edu.co.proyecto.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "reservasEspacios")
+@Table(name = "reservas_espacios")
 public class ReservaEspacio {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

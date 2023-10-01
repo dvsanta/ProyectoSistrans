@@ -1,4 +1,4 @@
-package uniandes.edu.modelo;
+package uniandes.edu.co.proyecto.modelo;
 
 import java.sql.Date;
 
@@ -14,14 +14,14 @@ public class Consumo {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String descripcion;
-    private double precioTotal;
+    private double precio_total;
     private Date dia;
     private Date mes;
     private Date anio;
 
     public Consumo(String descripcion, double precioTotal, Date dia, Date mes, Date anio) {
         this.descripcion = descripcion;
-        this.precioTotal = precioTotal;
+        this.precio_total = precioTotal;
         this.dia = dia;
         this.mes = mes;
         this.anio = anio;
@@ -43,10 +43,10 @@ public class Consumo {
         this.descripcion = descripcion;
     }
     public double getPrecioTotal() {
-        return precioTotal;
+        return precio_total;
     }
     public void setPrecioTotal(double precioTotal) {
-        this.precioTotal = precioTotal;
+        this.precio_total = precioTotal;
     }
     public Date getDia() {
         return dia;
