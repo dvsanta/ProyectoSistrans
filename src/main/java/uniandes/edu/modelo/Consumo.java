@@ -18,14 +18,13 @@ public class Consumo {
     private Date dia;
     private Date mes;
     private Date anio;
-    private Integer hora;
-    public Consumo(String descripcion, double precioTotal, Date dia, Date mes, Date anio, Integer hora) {
+
+    public Consumo(String descripcion, double precioTotal, Date dia, Date mes, Date anio) {
         this.descripcion = descripcion;
         this.precioTotal = precioTotal;
         this.dia = dia;
         this.mes = mes;
         this.anio = anio;
-        this.hora = hora;
     }
 
     public Consumo()
@@ -66,14 +65,5 @@ public class Consumo {
     }
     public void setAnio(Date anio) {
         this.anio = anio;
-    }
-    public Integer getHora() {
-        return hora;
-    }
-    public void setHora(Integer hora) {
-        this.hora = hora;
-    }
-
-    
-    
+    }    
 }

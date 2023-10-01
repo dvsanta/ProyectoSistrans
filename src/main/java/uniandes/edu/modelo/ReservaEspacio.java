@@ -16,16 +16,12 @@ public class ReservaEspacio {
     private Integer mes;
     private Integer anio;
     private Integer hora;
-    private Integer minuto;
-   
-   
 
-    public ReservaEspacio(Integer dia, Integer mes, Integer anio, Integer hora, Integer minuto) {
+    public ReservaEspacio(Integer dia, Integer mes, Integer anio, Integer hora) {
         this.dia = dia;
         this.mes = mes;
         this.anio = anio;
         this.hora = hora;
-        this.minuto = minuto;
     }
     
     public ReservaEspacio() {;}
@@ -68,13 +64,5 @@ public class ReservaEspacio {
 
     public void setHora(Integer hora) {
         this.hora = hora;
-    }
-
-    public Integer getMinuto() {
-        return minuto;
-    }
-
-    public void setMinuto(Integer minuto) {
-        this.minuto = minuto;
     }
 }

@@ -14,7 +14,6 @@ public class Habitacion {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
-    private TipoHabitacion tipoHabitacion;
     private Integer capacidad;
     private Double precioHabitacion;
     private Double precioMinibar;
@@ -23,9 +22,8 @@ public class Habitacion {
 
     public Habitacion(){;}
 
-    public Habitacion(TipoHabitacion tipoHabitacion, Integer capacidad, Double precioHabitacion, Double precioMinibar,
+    public Habitacion(Integer capacidad, Double precioHabitacion, Double precioMinibar,
             Double consumoTienda, Boolean estaOcupada) {
-        this.tipoHabitacion = tipoHabitacion;
         this.capacidad = capacidad;
         this.precioHabitacion = precioHabitacion;
         this.precioMinibar = precioMinibar;
@@ -37,12 +35,6 @@ public class Habitacion {
     }
     public void setId(Integer id) {
         this.id = id;
-    }
-    public TipoHabitacion getTipoHabitacion() {
-        return tipoHabitacion;
-    }
-    public void setTipoHabitacion(TipoHabitacion tipoHabitacion) {
-        this.tipoHabitacion = tipoHabitacion;
     }
     public Integer getCapacidad() {
         return capacidad;
