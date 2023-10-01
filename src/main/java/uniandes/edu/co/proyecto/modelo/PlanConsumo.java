@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -17,6 +19,10 @@ public class PlanConsumo {
     private Integer descuento_general;
     private Boolean bebidas_ilimitadas;
     private Boolean internet_ilimitado;
+    
+    @ManyToOne
+    @JoinColumn(name = "id_hotel", referencedColumnName = "id")
+    private Hotel id_hotel;
 
     public PlanConsumo(String tipo, Integer descuentoGeneral, Boolean bebidasIlimitadas, Boolean internetIlimitado) {
         this.tipo = tipo;

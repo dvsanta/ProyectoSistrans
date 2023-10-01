@@ -5,6 +5,8 @@ import java.sql.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.GenerationType;
 @Entity
@@ -18,6 +20,13 @@ public class Consumo {
     private Date dia;
     private Date mes;
     private Date anio;
+
+    @ManyToOne
+    @JoinColumn(name = "id_servicio", referencedColumnName = "id")
+    private Servicios id_servicio;
+    @ManyToOne
+    @JoinColumn(name = "id_habitacion", referencedColumnName = "id")
+    private Habitacion id_habitacion;
 
     public Consumo(String descripcion, double precioTotal, Date dia, Date mes, Date anio) {
         this.descripcion = descripcion;

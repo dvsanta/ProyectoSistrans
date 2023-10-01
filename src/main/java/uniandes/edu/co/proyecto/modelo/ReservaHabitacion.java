@@ -17,12 +17,17 @@ public class ReservaHabitacion {
     private Integer anio_salida;
 
     @ManyToOne
-    @JoinColumn(name = "id_suario", referencedColumnName = "id")
+    @JoinColumn(name = "id_usuario", referencedColumnName = "id")
     private Usuario id_usuario;
+
+    @ManyToOne
+    @JoinColumn(name = "tipo_plan", referencedColumnName = "id")
+    private PlanConsumo tipo_plan;
 
     @ManyToOne
     @JoinColumn(name = "id_habitacion", referencedColumnName = "id")
     private Habitacion id_habitacion;
+    
 
     public ReservaHabitacion() {;}
 

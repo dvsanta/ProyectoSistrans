@@ -11,9 +11,14 @@ public class Usuario {
     private Integer id;
     private String nombre;
     private String correo_electronico;
+    
     @ManyToOne
     @JoinColumn(name = "tipo", referencedColumnName = "id")
     private TipoUsuario tipo;
+    
+    @ManyToOne
+    @JoinColumn(name = "id_hotel", referencedColumnName = "id")
+    private Hotel id_hotel;
 
     public Usuario(String nombre,String correo_electronico,TipoUsuario tipoUsuario) {
         this.nombre = nombre;

@@ -7,6 +7,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 @Table(name="habitaciones")
@@ -19,6 +21,10 @@ public class Habitacion {
     private Double precio_minibar;
     private Double consumos_tienda;
     private Boolean esta_ocupada;
+
+    @ManyToOne
+    @JoinColumn(name = "tipo", referencedColumnName = "id")
+    private TipoHabitacion tipo;
 
     public Habitacion(){;}
 

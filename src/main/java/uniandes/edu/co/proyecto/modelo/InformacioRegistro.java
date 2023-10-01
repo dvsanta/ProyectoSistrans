@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -19,6 +21,14 @@ public class InformacioRegistro {
     private Integer dia_salida;
     private Integer mes_salida;
     private Integer anio_salida;
+
+    @ManyToOne
+    @JoinColumn(name = "id_usuario", referencedColumnName = "id")
+    private Usuario id_usuario;
+    
+    @ManyToOne
+    @JoinColumn(name = "id_habitacion", referencedColumnName = "id")
+    private Habitacion id_habitacion;
 
     public InformacioRegistro() {;}
     public InformacioRegistro(Integer diaEntrada, Integer mesEntrada, Integer anioEntrada, Integer diaSalida, Integer mesSalida, Integer anioSalida) {

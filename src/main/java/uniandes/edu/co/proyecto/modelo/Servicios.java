@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -13,6 +15,10 @@ public class Servicios {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private Integer precio_unitario;
+
+    @ManyToOne
+    @JoinColumn(name = "id_hotel", referencedColumnName = "id")
+    private Hotel id_hotel;
 
     public Servicios(Integer precioUnitario) {
         this.precio_unitario = precioUnitario;
