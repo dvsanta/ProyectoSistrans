@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4FF27FEE-A4D1-98B4-FDC6-0F5F8644EC26" name="ReservaHabitacion">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>004EFC2F-B9A0-5F83-FB8D-8E717F6EC9C2</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="F13ECF68-256F-B8B8-CCB1-4A7E49E77AC9">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>14DA8C6F-A9EB-A55E-69A2-F5F8292BF551</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_personas" id="4ABDA6A3-723A-1DC1-DE3C-C77DA5EF44BC">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>4DFDB09F-D324-85CB-40F4-510BB6F8209F</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dia_entrada" id="90678B8F-20E8-CB48-81E1-E35B99C81153">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>0C558BDE-0B02-E298-5E0B-73A1C5B6160E</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mes_entrada" id="BCFBF455-DB52-8837-EE33-C81C8CE8AE41">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>2CAD17F7-7A81-C51F-ECC7-68DE86E71E11</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="anio_entrada" id="15F20271-7D0B-92AC-7585-CD910C546BA6">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>3BAE1637-8D7C-B57E-99DE-BAACC6FFD562</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dia_salida" id="4D0ED435-D7BA-5E0A-1663-9C4FD41359A3">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>316F2583-9B9F-84F1-615F-1A4B8A052719</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mes_salida" id="18EC770E-AECD-C500-C05F-0FE8039C4E9A">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>DB485AE9-7009-6B0F-7E86-5B42DB03667C</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="anio_salida" id="951F9DD2-F697-DA21-42D9-0E58096AF18B">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>3785F22B-108C-897D-FAF5-A701D259B5AB</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario" id="9CB94D77-CE16-14C2-57E5-D50048182D50">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>6C05FB6D-0FB3-CE0E-4A7B-60CEC3860665</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="469EB41B-A6F9-BA6F-252E-325D4FDA4A04" referredColumn="8C5F3866-2FD4-0515-3190-9AFEBB3B618B"/>
+</associations>
+</Column>
+<Column name="tipo_plan" id="8B4F9003-C7EB-0ED4-F7D6-28094D1E6BA7">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>01A7B290-0457-54A2-AB06-C7450E0432A8</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47F193EE-C344-E587-792B-59B3C9DACB38" referredColumn="BB47EA64-51CC-31CC-D581-99C9D0CDFA13"/>
+</associations>
+</Column>
+<Column name="id_habitacion" id="95FDCA26-29BF-C574-7F31-44F4826E3C68">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>C5F99503-7E75-94D5-199F-F74B487A8D17</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="771E87FF-39A8-4537-D028-206EA98BBF54" referredColumn="B5D13B91-992F-D144-D4AB-B3D66666D1FC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F8C2D7D0-6AFF-EB91-B84B-C31F6C499B87" name="ReservaHabitacion_PK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>74CED847-087A-1838-3F8F-E76AA6F67B42</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F13ECF68-256F-B8B8-CCB1-4A7E49E77AC9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4390C648-E48A-5BCD-5E78-0713674A2B9C" name="ReservaHabitacion_PlanesConsumo_FK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>E1871026-460C-8D58-8574-C83B613F688C</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B4F9003-C7EB-0ED4-F7D6-28094D1E6BA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BC79DA7-273E-6378-8150-98BCF77EF9CD" name="ReservaHabitacion_Usuarios_FK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>7DF3A2EE-CF93-7942-0C3B-9E8F096C476F</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CB94D77-CE16-14C2-57E5-D50048182D50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3FEA15A2-2FE9-2953-18D8-89308ECD9B65" name="ReservaHabitacion_Habitaciones_FK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>62250D24-5169-1052-E7B1-FDB31EA0EDE6</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95FDCA26-29BF-C574-7F31-44F4826E3C68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

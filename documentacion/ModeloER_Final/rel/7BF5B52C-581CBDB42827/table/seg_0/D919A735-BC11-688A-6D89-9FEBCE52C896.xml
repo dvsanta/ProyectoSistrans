@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D919A735-BC11-688A-6D89-9FEBCE52C896" name="Consumos">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>AE4394BC-2367-F0F9-57D1-FE290BB98CF3</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="2EFFF66B-E086-33B8-FA97-6FFEA7C1ACEA">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>2C85F924-D2D6-07F3-15F7-A003A05A5CB0</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="DBCFF868-CD34-B9D9-3A57-B135A12E3032">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>5B87BF35-B3B1-44F4-4893-141C447CCAE2</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio_total" id="217677E6-EE8D-2725-D747-89B0A19EF269">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>E0E85545-7E0A-1E34-16CA-E5B50F9FEDCA</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dia" id="E50DCBF1-FD60-FA69-DEAB-13DD50197F5B">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>9314CED9-4F8C-E028-E8BB-06247F5B193C</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mes" id="0F9AF189-D571-15C3-CFA1-A7FAC731F327">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>5744E663-AAC9-B7E6-57FF-BC5F186E21EF</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="anio" id="F2889EE0-18B6-7105-8F7E-584F09B25D87">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>080D3BAB-299C-3E41-6E58-7A31CA873A50</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora" id="066DB19D-AFE9-F1DC-8DFB-66E0B0E74CEA">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>2674A995-E3AC-C584-C724-E3EF7A18419B</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_habitacion" id="20E0D92C-D547-E284-2306-DE858FDB8A35">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>08DCA819-23FA-8CA6-B8AE-30BAFC0DEFF6</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C584054-8F23-1026-5E5F-FEB52A7629BA" referredColumn="B5D13B91-992F-D144-D4AB-B3D66666D1FC"/>
+</associations>
+</Column>
+<Column name="id_servicio" id="73985297-6E64-A028-C418-EFE87185BCC8">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>E6E7007A-C153-338D-3E35-6749B45DEB23</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="371DE5CA-4989-A7A1-9D2C-18CB970E8367" referredColumn="80F20B08-4D7A-D1F7-F9E9-6384DCB5B465"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4BEED87E-41AE-42CF-BE24-3FA6F2A8283E" name="Consumos_PK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>0399A2AF-D550-D33E-DDD0-B49FB5488BB0</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EFFF66B-E086-33B8-FA97-6FFEA7C1ACEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9BD98EB-98DD-2085-EDA2-68F36C9CF449" name="Consumos_Habitaciones_FK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>3A7F5CA6-00D4-2659-4400-033DFEF2FB67</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20E0D92C-D547-E284-2306-DE858FDB8A35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5111DBDC-6B41-88F8-BAF9-20FA5B3B956E" name="Consumos_Servicios_FK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>D0BA1F25-1779-5A50-6D73-7ED65772DBDD</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73985297-6E64-A028-C418-EFE87185BCC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CFF032F5-C086-1E2D-3F8D-495D3B4B9C0E" name="Usuarios">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>D2110DC3-D3DD-0370-1A27-03D862CA6CE8</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="8C5F3866-2FD4-0515-3190-9AFEBB3B618B">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>B08D4376-3D79-01E1-2943-D1B93B0321AC</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="CB97B065-F9B3-6237-011F-C668CF4ED589">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>823A7664-465A-FCD3-6324-F3B255D0F045</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo_electronico" id="7F670822-9607-C3CE-CF91-12FDAA8841F2">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>7EC2D360-72F2-CDDF-0C82-8930508BEC77</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="8224586E-6B66-81F3-7E9E-A76249A2DACD">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>854C34F9-D2C2-27D9-165C-240F1F137C65</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C81CFB0-648B-2D2A-7543-3481F881E087" referredColumn="B592DB18-3634-5DF9-4919-15C4329E6EBA"/>
+</associations>
+</Column>
+<Column name="id_hotel" id="6E0A32F2-54D7-F5CE-8B1E-B85ACE8860BA">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>738F2260-C61F-4F8F-9988-B3B6FB41AE97</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F380439E-2655-2188-2424-5BE2BE0D1C56" referredColumn="39F4FBB2-9B9B-DDC9-CFEC-DA7E66BD3843"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D89B3D04-73F6-4EC3-80C5-B008D4D60F0B" name="Usuarios_PK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>3CF60A72-28F3-524A-1314-E2498A949D64</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C5F3866-2FD4-0515-3190-9AFEBB3B618B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A77E65F-FB69-7957-E09B-BD6CF7A4979E" name="Usuarios_Hoteles_FK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>55C49021-D197-32F6-E23E-C98E1CCAC6EA</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E0A32F2-54D7-F5CE-8B1E-B85ACE8860BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED1DC680-A2F2-3EED-9290-AFE2831DCA53" name="Usuarios_TiposUsuarios_FK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>4BF9363C-CF89-0082-ED62-66E195AA1AF6</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8224586E-6B66-81F3-7E9E-A76249A2DACD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

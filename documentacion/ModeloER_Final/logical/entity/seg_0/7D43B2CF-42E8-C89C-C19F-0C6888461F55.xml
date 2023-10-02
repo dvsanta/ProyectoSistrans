@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D43B2CF-42E8-C89C-C19F-0C6888461F55" name="PlanesConsumo">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:41:17 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="9C201685-D147-6FF9-C1FF-34F6D31E3E72">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:41:37 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="148F71C1-2A22-A367-FE97-E802E596DEFE">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:41:44 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descuento_general" id="74A28C70-FA96-73FF-1302-24830C13B1F2">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:42:08 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bebidas_ilimitadas" id="27E7F625-7FDD-8031-9396-D3FAF5EB4FCE">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:42:26 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="internet_ilimitado" id="81E67163-2AA3-E43E-B22D-0397D08377E0">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:42:58 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_hotel" id="A68AF322-7497-D3C8-4424-AAD353849101">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:53:16 UTC</createdTime>
+<generatorID>7FD6E712-B25C-06AF-128A-630716615C3C</generatorID>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<referedAttribute>D76E5065-B756-0C47-C4ED-A98D7DA2C7DE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>id_hotel</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D378B6D8-0C0F-1645-184A-41DAB9F02941" name="PlanesConsumo PK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:41:42 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9C201685-D147-6FF9-C1FF-34F6D31E3E72</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

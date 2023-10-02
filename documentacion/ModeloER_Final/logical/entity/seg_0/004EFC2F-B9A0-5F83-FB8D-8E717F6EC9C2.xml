@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="004EFC2F-B9A0-5F83-FB8D-8E717F6EC9C2" name="ReservaHabitacion">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:37:33 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="14DA8C6F-A9EB-A55E-69A2-F5F8292BF551">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:37:42 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_personas" id="4DFDB09F-D324-85CB-40F4-510BB6F8209F">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:38:08 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dia_entrada" id="0C558BDE-0B02-E298-5E0B-73A1C5B6160E">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:38:19 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mes_entrada" id="2CAD17F7-7A81-C51F-ECC7-68DE86E71E11">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:38:46 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="anio_entrada" id="3BAE1637-8D7C-B57E-99DE-BAACC6FFD562">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:39:06 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dia_salida" id="316F2583-9B9F-84F1-615F-1A4B8A052719">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:40:32 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mes_salida" id="DB485AE9-7009-6B0F-7E86-5B42DB03667C">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:40:14 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="anio_salida" id="3785F22B-108C-897D-FAF5-A701D259B5AB">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:40:46 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_usuario" id="6C05FB6D-0FB3-CE0E-4A7B-60CEC3860665">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:48:06 UTC</createdTime>
+<generatorID>7DF3A2EE-CF93-7942-0C3B-9E8F096C476F</generatorID>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<referedAttribute>B08D4376-3D79-01E1-2943-D1B93B0321AC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>id_usuario</preferredAbbreviation>
+</Attribute>
+<Attribute name="tipo_plan" id="01A7B290-0457-54A2-AB06-C7450E0432A8">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:49:09 UTC</createdTime>
+<generatorID>E1871026-460C-8D58-8574-C83B613F688C</generatorID>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<referedAttribute>9C201685-D147-6FF9-C1FF-34F6D31E3E72</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>tipo_plan</preferredAbbreviation>
+</Attribute>
+<Attribute name="id_habitacion" id="C5F99503-7E75-94D5-199F-F74B487A8D17">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:49:53 UTC</createdTime>
+<generatorID>62250D24-5169-1052-E7B1-FDB31EA0EDE6</generatorID>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<referedAttribute>A0124495-EE00-A5B3-8E93-EA977E31C506</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>id_habitacion</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="74CED847-087A-1838-3F8F-E76AA6F67B42" name="ReservaHabitacion PK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:37:49 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>14DA8C6F-A9EB-A55E-69A2-F5F8292BF551</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

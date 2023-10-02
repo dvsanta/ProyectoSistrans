@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_26" directorySegmentName="seg_0" id="807FDFBC-B5F1-0C95-34BD-7598904F69D9">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-02 04:37:28 UTC</createdTime>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<sourcePk>53766D06-2CA4-D2F4-8FAB-2AE417F1DB75</sourcePk>
+<identifying>false</identifying>
+<nameOnTarget>id_hotel</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>92C9F892-5A0B-4823-8DE0-5A09ABFA702E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>887AFF2D-D8E5-C87F-616E-4B3983BD9305</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

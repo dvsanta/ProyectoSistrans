@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D2110DC3-D3DD-0370-1A27-03D862CA6CE8" name="Usuarios">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:29:02 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="B08D4376-3D79-01E1-2943-D1B93B0321AC">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:29:08 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="823A7664-465A-FCD3-6324-F3B255D0F045">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:29:19 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo_electronico" id="7EC2D360-72F2-CDDF-0C82-8930508BEC77">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:30:14 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="854C34F9-D2C2-27D9-165C-240F1F137C65">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:32:09 UTC</createdTime>
+<generatorID>4BF9363C-CF89-0082-ED62-66E195AA1AF6</generatorID>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<referedAttribute>FA3236CB-6A98-496F-E758-BB92C99B91B2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>tipo</preferredAbbreviation>
+</Attribute>
+<Attribute name="id_hotel" id="738F2260-C61F-4F8F-9988-B3B6FB41AE97">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:34:12 UTC</createdTime>
+<generatorID>55C49021-D197-32F6-E23E-C98E1CCAC6EA</generatorID>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<referedAttribute>D76E5065-B756-0C47-C4ED-A98D7DA2C7DE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>id_hotel</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3CF60A72-28F3-524A-1314-E2498A949D64" name="Usuarios PK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:29:16 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B08D4376-3D79-01E1-2943-D1B93B0321AC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

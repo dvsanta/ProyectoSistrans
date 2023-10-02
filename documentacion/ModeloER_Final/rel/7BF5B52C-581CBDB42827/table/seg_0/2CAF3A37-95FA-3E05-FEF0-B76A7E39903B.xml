@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2CAF3A37-95FA-3E05-FEF0-B76A7E39903B" name="Habitaciones">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>99EB849B-EA69-E813-71E0-13936586A031</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B5D13B91-992F-D144-D4AB-B3D66666D1FC">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>A0124495-EE00-A5B3-8E93-EA977E31C506</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacidad" id="B298166E-0EA6-B187-599F-B4D174C5A1DD">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>89E09493-9D75-1B81-C423-3A8DB691FE7F</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio_habitacion" id="C3185F3D-1F50-BE12-7E05-EF688E6ED78F">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>61CC09E7-E90D-A6AD-E888-004AE5192DE6</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio_minibar" id="90E56107-FF65-3B52-C248-CAE89B9FBEE7">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>76973A9B-0F00-AF4C-012F-148D004665B3</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cosumos_tiensa" id="FE369695-1B91-0582-057A-A0FD6C49C8C2">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>997DB339-2E09-9FEE-EEBA-BED0C75ECC33</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="esta_ocupada" id="4E498FA6-0DE4-9E97-CEB7-8B7D8537D31A">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>7E132E41-3DAA-EA78-6377-0C6ECA3018BA</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<constraintName>ck_ocupada</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="tipo" id="7107F58E-BACB-B5E9-0A7C-8FACEB6AAA66">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>BC032C2E-D54D-5012-14C2-CC193A26F666</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3EE141E-97E7-2DDF-2AB5-09F2B7CEAD6B" referredColumn="0583CDFE-120A-F7A4-6C36-196BD6CE4820"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8DFED185-CCD1-91C4-ECDC-AF21E7015A0C" name="Habitaciones_PK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>F6AF208E-632C-C05C-8008-CEAF1574C281</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5D13B91-992F-D144-D4AB-B3D66666D1FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABEB6ED7-B21E-F4AC-619D-1AA3AA85C9A8" name="Habitaciones_TiposHabitaciones_FK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>9A05A73C-559F-CA74-7580-772717D3249A</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7107F58E-BACB-B5E9-0A7C-8FACEB6AAA66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

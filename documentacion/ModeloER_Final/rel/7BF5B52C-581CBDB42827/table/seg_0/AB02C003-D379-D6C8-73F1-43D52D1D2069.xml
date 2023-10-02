@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AB02C003-D379-D6C8-73F1-43D52D1D2069" name="Piscinas">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>C4930BB3-7402-09E4-C99C-0C993DCE79EE</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="71881DFA-8C47-0E08-40A0-D10AF1CE61E6">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>60B8BBFF-6D41-9EA0-85A2-36325A3D299C</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1FC39FC3-544E-F886-1A16-03ACE5795435" referredColumn="80F20B08-4D7A-D1F7-F9E9-6384DCB5B465"/>
+</associations>
+</Column>
+<Column name="profundidad" id="B702C548-A3FC-FA69-23F2-4D4C9DCF5FA6">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>183A9F60-D1A3-93F9-BC06-DFAFA640EC11</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0C9983BA-4FA9-2032-6B89-357617450CA4" name="Piscinas_PK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>A377EF90-2CE0-4366-BBD5-EF87D5B6F1D3</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71881DFA-8C47-0E08-40A0-D10AF1CE61E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1174420-E277-6DEF-1D07-5EDCDD10BE1D" name="Piscinas_Servicios_FK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>DC1BFEA8-BF58-BDE0-128C-35E9DFA3D85C</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71881DFA-8C47-0E08-40A0-D10AF1CE61E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

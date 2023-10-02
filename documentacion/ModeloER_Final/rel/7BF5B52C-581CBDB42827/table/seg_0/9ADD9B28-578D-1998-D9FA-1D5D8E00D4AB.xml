@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9ADD9B28-578D-1998-D9FA-1D5D8E00D4AB" name="Servicios">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>887AFF2D-D8E5-C87F-616E-4B3983BD9305</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="80F20B08-4D7A-D1F7-F9E9-6384DCB5B465">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>7EEC521D-356F-69F4-39B8-8DEFB64C04F5</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio_unitario" id="1BC6717A-B99E-2831-2FFF-0A66F424B2F9">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>9EDF6A53-1B2B-314E-789B-234DCD6BCA49</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_hotel" id="B64D5CE4-C9D9-538A-71D2-21A9921867FE">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-02 04:37:54 UTC</createdTime>
+<generatorID>27BBD532-3AF4-BF9A-B0EB-B0AEC38A33BA</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA94A3ED-3786-F094-DFAC-58DB9236AD63" referredColumn="39F4FBB2-9B9B-DDC9-CFEC-DA7E66BD3843"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E19BC2CB-914F-EC97-4C0B-193398B06D0E" name="Servicios_PK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>42CA5B65-1EED-6F11-C8B2-9D3C7773F262</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80F20B08-4D7A-D1F7-F9E9-6384DCB5B465"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3C7F860-7162-8FF3-29AA-4B54255446B6" name="Servicios_Hoteles_FK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-02 04:37:54 UTC</createdTime>
+<generatorID>807FDFBC-B5F1-0C95-34BD-7598904F69D9</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B64D5CE4-C9D9-538A-71D2-21A9921867FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

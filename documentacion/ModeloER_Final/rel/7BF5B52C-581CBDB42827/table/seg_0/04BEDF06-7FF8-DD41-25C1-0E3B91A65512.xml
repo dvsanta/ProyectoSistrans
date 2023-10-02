@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="04BEDF06-7FF8-DD41-25C1-0E3B91A65512" name="Bares">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>28DA5337-96E4-12EC-17B5-4354C4A1D372</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="D115313E-2629-D7C9-F272-8CF16BB4F097">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>045857BC-29E4-9116-6998-5203A205A5FF</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C28C695-ADEE-4845-8DFA-3B2096501C11" referredColumn="80F20B08-4D7A-D1F7-F9E9-6384DCB5B465"/>
+</associations>
+</Column>
+<Column name="tipo" id="797E8F8E-37C6-1E55-5A20-BA32D9F94F0D">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>CDAA1340-1FE8-C12F-FABA-72991B8905C0</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EA012DA8-5BD0-2106-A12E-161F8787002E" name="Bares_PK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>64F05F93-CEDD-88C4-A7FC-DA316BBE25D6</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D115313E-2629-D7C9-F272-8CF16BB4F097"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="819EE6EA-DB27-AE44-AD04-F1A9F2D01C9B" name="Bares_Servicios_FK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 17:14:34 UTC</createdTime>
+<generatorID>37F6720C-2E20-19E8-C862-C387F87DBD2F</generatorID>
+<ownerDesignName>ModeloER_Final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D115313E-2629-D7C9-F272-8CF16BB4F097"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

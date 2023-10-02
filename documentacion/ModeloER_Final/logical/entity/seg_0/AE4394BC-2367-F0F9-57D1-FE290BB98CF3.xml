@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AE4394BC-2367-F0F9-57D1-FE290BB98CF3" name="Consumos">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:57:59 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="2C85F924-D2D6-07F3-15F7-A003A05A5CB0">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:58:06 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="5B87BF35-B3B1-44F4-4893-141C447CCAE2">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:58:12 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precio_total" id="E0E85545-7E0A-1E34-16CA-E5B50F9FEDCA">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:58:37 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dia" id="9314CED9-4F8C-E028-E8BB-06247F5B193C">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:58:54 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mes" id="5744E663-AAC9-B7E6-57FF-BC5F186E21EF">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:59:09 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="anio" id="080D3BAB-299C-3E41-6E58-7A31CA873A50">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:59:16 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora" id="2674A995-E3AC-C584-C724-E3EF7A18419B">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:59:25 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_habitacion" id="08DCA819-23FA-8CA6-B8AE-30BAFC0DEFF6">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:59:55 UTC</createdTime>
+<generatorID>3A7F5CA6-00D4-2659-4400-033DFEF2FB67</generatorID>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<referedAttribute>A0124495-EE00-A5B3-8E93-EA977E31C506</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>id_habitacion</preferredAbbreviation>
+</Attribute>
+<Attribute name="id_servicio" id="E6E7007A-C153-338D-3E35-6749B45DEB23">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 05:00:42 UTC</createdTime>
+<generatorID>D0BA1F25-1779-5A50-6D73-7ED65772DBDD</generatorID>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<referedAttribute>7EEC521D-356F-69F4-39B8-8DEFB64C04F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>id_servicio</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0399A2AF-D550-D33E-DDD0-B49FB5488BB0" name="Consumos PK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:58:11 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2C85F924-D2D6-07F3-15F7-A003A05A5CB0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

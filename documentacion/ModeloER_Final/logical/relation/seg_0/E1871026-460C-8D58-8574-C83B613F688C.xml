@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="planConsumo" directorySegmentName="seg_0" id="E1871026-460C-8D58-8574-C83B613F688C">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 04:49:09 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<sourcePk>D378B6D8-0C0F-1645-184A-41DAB9F02941</sourcePk>
+<identifying>false</identifying>
+<nameOnTarget>tipo_plan</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7D43B2CF-42E8-C89C-C19F-0C6888461F55</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>004EFC2F-B9A0-5F83-FB8D-8E717F6EC9C2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

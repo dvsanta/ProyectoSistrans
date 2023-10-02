@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="17CEEF41-D7E8-30EC-915C-B6116A321E5A" name="ReservasEspacios">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 05:08:29 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="BE40D499-2B54-B29C-CD57-F9CE07C0C6BC">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 05:14:08 UTC</createdTime>
+<generatorID>BAF49C55-8D49-15D3-FB5D-C12D6319D79C</generatorID>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<referedAttribute>7EEC521D-356F-69F4-39B8-8DEFB64C04F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>id</preferredAbbreviation>
+</Attribute>
+<Attribute name="dia" id="CF16011E-4599-D742-7048-3B589FC2B450">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 05:08:42 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mes" id="0A05A61E-0F56-1E90-B977-46875E4D255F">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 05:08:56 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="anio" id="2392CE50-9B42-D142-E185-0A2D633F8444">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 05:09:02 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora" id="B5ADF61E-CA50-D22D-65F5-19C73BB19C29">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 05:09:16 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="espacio" id="5607DA4E-69AF-0DA2-472B-93C5ACFBDE5A">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 05:17:24 UTC</createdTime>
+<generatorID>88F7728D-6229-9CF3-0C2F-A4DB97669DD5</generatorID>
+<ownerDesignName>modeloERF</ownerDesignName>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="true"/>
+</engineerTo>
+<referedAttribute>31BDCE1F-4ACA-DFCF-1133-8D7623A3E656</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>espacio</preferredAbbreviation>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AC6B2F82-FEF7-14BA-AABF-4AAE0D704857" name="ReservasEspacios PK">
+<createdBy>juanj</createdBy>
+<createdTime>2023-10-01 05:08:41 UTC</createdTime>
+<ownerDesignName>modeloERF</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BF5B52C-7106-2491-BA58-581CBDB42827" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BE40D499-2B54-B29C-CD57-F9CE07C0C6BC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
