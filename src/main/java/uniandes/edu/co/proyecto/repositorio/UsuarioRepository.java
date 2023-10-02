@@ -35,9 +35,9 @@ public interface UsuarioRepository extends JpaRepository<Usuario,Integer>{
     @Query(value = 
     "UPDATE usuarios SET" +
         "nombre = :nombre,"+
-        "correo_electronico =: correo,"+
-        "tipo =: idTipoUsuario,"+ 
-        "id_hotel =: idHotel" +
+        "correo_electronico = :correo,"+
+        "tipo = :idTipoUsuario,"+
+        "id_hotel = :idHotel" +
     "WHERE id = :id"
     ,nativeQuery=true)
     void actualizarUsuario(

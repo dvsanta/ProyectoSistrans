@@ -40,14 +40,14 @@ public interface HabitacionRepository extends JpaRepository<Habitacion,Integer>{
     @Modifying
     @Transactional
     @Query(value = 
-        "UPDATE habitaciones SET" +
+        "UPDATE habitaciones SET " +
+            "tipo = :tipo," +
             "capacidad = :capacidad,"+
-            "precio_habitacion =: precioHabitacion,"+
-            "precio_minibar =: precioMinibar,"+
-            "consumos_tienda =: consumosTienda," +
-            "esta_ocupada =: ocupada," +
-            "tipo =: tipo"+
-        "WHERE id= :id"
+            "precio_habitacion = :precioHabitacion,"+
+            "precio_minibar = :precioMinibar,"+
+            "consumos_tienda = :consumosTienda," +
+            "esta_ocupada = :ocupada" +
+        " WHERE id= :id"
         , nativeQuery = true)
     void actualizarHabitacion(
         @Param("id") Integer id,
