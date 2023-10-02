@@ -17,14 +17,14 @@ public class PlanConsumo {
     private Integer id;
     private String tipo;
     private Integer descuento_general;
-    private Boolean bebidas_ilimitadas;
-    private Boolean internet_ilimitado;
+    private Integer bebidas_ilimitadas;
+    private Integer internet_ilimitado;
     
     @ManyToOne
     @JoinColumn(name = "id_hotel", referencedColumnName = "id")
     private Hotel id_hotel;
 
-    public PlanConsumo(String tipo, Integer descuentoGeneral, Boolean bebidasIlimitadas, Boolean internetIlimitado) {
+    public PlanConsumo(String tipo, Integer descuentoGeneral, Integer bebidasIlimitadas, Integer internetIlimitado) {
         this.tipo = tipo;
         this.descuento_general = descuentoGeneral;
         this.bebidas_ilimitadas = bebidasIlimitadas;
@@ -58,19 +58,19 @@ public class PlanConsumo {
         this.descuento_general = descuentoGeneral;
     }
 
-    public Boolean getBebidasIlimitadas() {
+    public Integer getBebidasIlimitadas() {
         return bebidas_ilimitadas;
     }
 
-    public void setBebidasIlimitadas(Boolean bebidasIlimitadas) {
+    public void setBebidasIlimitadas(Integer bebidasIlimitadas) {
         this.bebidas_ilimitadas = bebidasIlimitadas;
     }
 
-    public Boolean getInternetIlimitado() {
+    public Integer getInternetIlimitado() {
         return internet_ilimitado;
     }
 
-    public void setInternetIlimitado(Boolean internetIlimitado) {
+    public void setInternetIlimitado(Integer internetIlimitado) {
         this.internet_ilimitado = internetIlimitado;
     }
 

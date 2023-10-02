@@ -13,6 +13,7 @@ import jakarta.persistence.ManyToOne;
 @Entity
 @Table(name="habitaciones")
 public class Habitacion {
+
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
@@ -20,7 +21,7 @@ public class Habitacion {
     private Double precio_habitacion;
     private Double precio_minibar;
     private Double consumos_tienda;
-    private Boolean esta_ocupada;
+    private Integer esta_ocupada;
 
     @ManyToOne
     @JoinColumn(name = "tipo", referencedColumnName = "id")
@@ -29,7 +30,7 @@ public class Habitacion {
     public Habitacion(){;}
 
     public Habitacion(Integer capacidad, Double precioHabitacion, Double precioMinibar,
-            Double consumoTienda, Boolean estaOcupada) {
+            Double consumoTienda, Integer estaOcupada) {
         this.capacidad = capacidad;
         this.precio_habitacion = precioHabitacion;
         this.precio_minibar = precioMinibar;
@@ -66,10 +67,10 @@ public class Habitacion {
     public void setConsumoTienda(Double consumoTienda) {
         this.consumos_tienda = consumoTienda;
     }
-    public Boolean getEstaOcupada() {
+    public Integer getEstaOcupada() {
         return esta_ocupada;
     }
-    public void setEstaOcupada(Boolean estaOcupada) {
+    public void setEstaOcupada(Integer estaOcupada) {
         this.esta_ocupada = estaOcupada;
     }
 

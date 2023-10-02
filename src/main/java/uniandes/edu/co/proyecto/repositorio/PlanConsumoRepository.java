@@ -9,7 +9,7 @@ import uniandes.edu.co.proyecto.modelo.PlanConsumo;
 
 import java.util.Collection;
 
-public interface PlanConsumoRepository extends JpaRepository<PlanConsumo, Integer> {
+public interface PlanConsumoRepository extends JpaRepository<PlanConsumo,Integer> {
 
     @Query(value = "SELECT * FROM planes_consumo", nativeQuery = true)
     Collection<PlanConsumo> darPlanesConsumo();
@@ -24,17 +24,18 @@ public interface PlanConsumoRepository extends JpaRepository<PlanConsumo, Intege
 
     @Modifying
     @Transactional
-    @Query(value = "UPDATE planes_consumo SET nombre = :nombre, tipo = :tipo, descuento_general = :descuentoGeneral, " +
-            "id_hotel = :id_hotel, bebidas_ilimitadas = :bebidas_ilimitadas, internet_ilimitado = :internet_ilimitado WHERE id = :id", nativeQuery = true)
+    @Query(value = "UPDATE planes_consumo SET nombre = :nombre, tipo = :tipo, descuento_general = :descuento_general, " +//
+            "id_hotel = :id_hotel, bebidas_ilimitadas = :bebidas_ilimitadas," +//
+            "internet_ilimitado = :internet_ilimitado WHERE id = :id", nativeQuery = true)
     void actualizarPlanConsumo(@Param("id") int id, @Param("nombre") String nombre, @Param("tipo") String tipo,
-                               @Param("descuentoGeneral") String descuentoGeneral, @Param("id_hotel") Integer id_hotel,
-                               @Param("bebidas_ilimitadas") Boolean bebidas_ilimitadas, @Param("internet_ilimitado") Boolean internet_ilimitado);
+                               @Param("descuento_general") Integer descuento_general, @Param("id_hotel") Integer id_hotel,
+                               @Param("bebidas_ilimitadas") Integer bebidas_ilimitadas, @Param("internet_ilimitado") Integer internet_ilimitado);
 
     @Modifying
     @Transactional
-    @Query(value = "INSERT INTO planes_consumo (id, nombre, tipo, descuento_general, id_hotel, bebidas_ilimitadas, internet_ilimitado) " +
-            "VALUES (hoteles_sequence.nextval, :nombre, :tipo, :descuentoGeneral, :id_hotel, :bebidas_ilimitadas, :internet_ilimitado)", nativeQuery = true)
+    @Query(value = "INSERT INTO planes_consumo (id,nombre,tipo,descuento_general, id_hotel, bebidas_ilimitadas, internet_ilimitado)"+//
+            " VALUES (hoteles_sequence.nextval, :nombre,:tipo,:descuento_general, :id_hotel, :bebidas_ilimitadas, :internet_ilimitado)", nativeQuery = true)
     void insertarPlanConsumo(@Param("nombre") String nombre, @Param("tipo") String tipo,
-                            @Param("descuentoGeneral") String descuentoGeneral, @Param("id_hotel") Integer id_hotel,
-                            @Param("bebidas_ilimitadas") Boolean bebidas_ilimitadas, @Param("internet_ilimitado") Boolean internet_ilimitado);
+                               @Param("descuento_general") String descuento_general, @Param("id_hotel") Integer id_hotel,
+                               @Param("bebidas_ilimitadas") Boolean bebidas_ilimitadas, @Param("internet_ilimitado") Boolean internet_ilimitado);
 }
