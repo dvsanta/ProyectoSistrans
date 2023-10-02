@@ -13,6 +13,10 @@ import jakarta.persistence.ManyToOne;
 @Entity
 @Table(name="habitaciones")
 public class Habitacion {
+
+    private static Integer ESTA_OCUPADA=1;
+    private static Integer NO_ESTA_OCUPADA=0;
+
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
@@ -20,7 +24,7 @@ public class Habitacion {
     private Double precio_habitacion;
     private Double precio_minibar;
     private Double consumos_tienda;
-    private Boolean esta_ocupada;
+    private Integer esta_ocupada;
 
     @ManyToOne
     @JoinColumn(name = "tipo", referencedColumnName = "id")
@@ -28,13 +32,19 @@ public class Habitacion {
 
     public Habitacion(){;}
 
-    public Habitacion(Integer capacidad, Double precioHabitacion, Double precioMinibar,
-            Double consumoTienda, Boolean estaOcupada) {
+    public Habitacion(
+        Integer capacidad, 
+        Double precioHabitacion, 
+        Double precioMinibar,
+        Double consumoTienda, 
+        Boolean estaOcupada,
+        TipoHabitacion tipoHabitacion) {
         this.capacidad = capacidad;
         this.precio_habitacion = precioHabitacion;
         this.precio_minibar = precioMinibar;
         this.consumos_tienda = consumoTienda;
-        this.esta_ocupada = estaOcupada;
+        this.esta_ocupada = estaOcupada? ESTA_OCUPADA: NO_ESTA_OCUPADA;
+        this.tipo = tipoHabitacion;
     }
     public Integer getId() {
         return id;
@@ -67,11 +77,18 @@ public class Habitacion {
         this.consumos_tienda = consumoTienda;
     }
     public Boolean getEstaOcupada() {
-        return esta_ocupada;
+        return esta_ocupada == ESTA_OCUPADA;
     }
     public void setEstaOcupada(Boolean estaOcupada) {
-        this.esta_ocupada = estaOcupada;
+        this.esta_ocupada = estaOcupada? ESTA_OCUPADA: NO_ESTA_OCUPADA;
     }
 
+    public TipoHabitacion getTipo(){
+        return tipo;
+    }
+
+    public void setTipo(TipoHabitacion tipoHabitacion){
+        this.tipo = tipoHabitacion;
+    }
     
 }

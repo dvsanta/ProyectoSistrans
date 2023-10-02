@@ -20,10 +20,15 @@ public class Usuario {
     @JoinColumn(name = "id_hotel", referencedColumnName = "id")
     private Hotel id_hotel;
 
-    public Usuario(String nombre,String correo_electronico,TipoUsuario tipoUsuario) {
+    public Usuario(
+        String nombre,
+        String correo_electronico,
+        TipoUsuario tipoUsuario,
+        Hotel hotel) {
         this.nombre = nombre;
         this.correo_electronico = correo_electronico;
         this.tipo = tipoUsuario;
+        this.id_hotel=hotel;
     }
 
     public Usuario()
