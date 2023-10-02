@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "informacion_registros")
-public class InformacioRegistro {
+public class InformacionRegistro {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
@@ -30,8 +30,8 @@ public class InformacioRegistro {
     @JoinColumn(name = "id_habitacion", referencedColumnName = "id")
     private Habitacion id_habitacion;
 
-    public InformacioRegistro() {;}
-    public InformacioRegistro(Integer diaEntrada, Integer mesEntrada, Integer anioEntrada, Integer diaSalida, Integer mesSalida, Integer anioSalida) {
+    public InformacionRegistro() {;}
+    public InformacionRegistro(Integer diaEntrada, Integer mesEntrada, Integer anioEntrada, Integer diaSalida, Integer mesSalida, Integer anioSalida) {
         this.dia_entrada = diaEntrada;
         this.mes_entrada = mesEntrada;
         this.anio_entrada = anioEntrada;
