@@ -19,9 +19,8 @@ public interface TipoUsuarioRepository extends JpaRepository<TipoUsuario,Integer
 
         @Modifying
         @Transactional
-        @Query(value = 
-        "INSERT INTO tipos_usuarios(id,nombre)"+
-         "VALUES (hoteles_sequence.nextval, :nombre)")
+        @Query(value = "INSERT INTO tipos_usuarios (id,nombre)"+
+         "VALUES (hoteles_sequence.nextval, :nombre)", nativeQuery = true)
         void insertarTipoUsuario(@Param("nombre") String nombre);
 
         @Modifying
